@@ -12,7 +12,6 @@ float fahrenheit;
 float kelvin;
 float meters;
 float yards;
-float celsius;
 
 //Single-Time Output
 cout << "Welcome to Converter!" << endl;
@@ -24,9 +23,7 @@ do {
     cout << "(2) Kelvin to Farenheit" << endl;
     cout << "(3) Meters to Yards" << endl;
     cout << "(4) Yards to Meters" << endl;
-    cout << "(5) Celsius to Farenheit" << endl;
-    cout << "(6) Fahrenheit to Celsius" << endl;
-    cout << "(7) Exit" << endl;
+    cout << "(5) Exit" << endl;
     cin >> x;
 
     //Logic
@@ -55,18 +52,6 @@ do {
     }
 
     else if (x == 5) {
-        cout << "Celsius to Fahrenheit- \nEnter a temperature in Celsius." << endl;
-        cin >> celsius;
-        cout << celsius << " degrees celsius is " << (celsius * 1.8) + 32 << " degrees fahrenheit\n\n";
-    }
-
-    else if (x == 6) {
-        cout << "Fahrenheit to Celsius- \nEnter a temperature in Fahrenheit.";
-        cin >> fahrenheit;
-        cout << fahrenheit << " degrees farenheit is " << ((fahrenheit - 32) / 1.8) << " degrees Celsius.\n\n";
-    }
-
-    else if (x == 7) {
         cout << "Terminating Program...\n\n";
         break;
     }
